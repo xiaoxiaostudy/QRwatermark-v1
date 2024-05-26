@@ -22,7 +22,7 @@ Now I just provide the code to test the passive attack effect of the model. I wi
 python distoration.py
 ```
 # Dataset Preparation
-Make sure to prepare your dataset in the following structure:
+Both the training set and the test set images are from the coco dataset.Make sure to prepare your dataset in the following structure:
 ```sh
 QRwatermark-v1/
 ├── datasets/
