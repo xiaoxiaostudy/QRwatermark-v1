@@ -1,0 +1,17 @@
+-----------------------Date: 2024/04/21 02:30:25-----------------------
+project_name = vqvae-4.21
+epoch_number = 301
+batch_size = 4
+train_continue = False
+train_continue_path = vqvae-4.8-20:24_m64_Combined([])__2024_04_08__14_27_38/
+train_continue_epoch = 73
+dataset_path = datasets/
+save_images_number = 4
+H = 128
+W = 128
+message_length = 64
+lr = 0.0005
+encoder_weight = 10
+encoder_percepweight = 0.01
+discriminator_weight = 0.001
+decoder_weight = 10
