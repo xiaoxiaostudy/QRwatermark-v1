@@ -19,7 +19,7 @@ class Network:
 		self.decoder = Fcanet_Decoder(H, W, message_length)
 
 		ddconfig={"double_z": False,"z_channels": 3,"resolution": 256,"in_channels": 3,"out_ch": 3,"ch": 128,"ch_mult": [ 1,2,4 ], "num_res_blocks": 2,"attn_resolutions": [ ],"dropout": 0.0}
-		vqvae_aug = VQModel(ddconfig, n_embed=8192, embed_dim=3, ckpt_path='/home/wangyue2/xiaoxiao/biggerwatermarkvqvae/regeneration/ckpt/vq_f4_model.ckpt')
+		vqvae_aug = VQModel(ddconfig, n_embed=8192, embed_dim=3, ckpt_path='https://ommer-lab.com/files/latent-diffusion/vq-f4.zip')
 		self.vqvae_aug = vqvae_aug.to(device)
 		for p in self.vqvae_aug.parameters():
 			p.requires_grad = False
