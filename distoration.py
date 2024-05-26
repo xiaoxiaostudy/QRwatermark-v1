@@ -22,7 +22,7 @@ def get_parser():
         group.add_argument(*args, **kwargs)
 
     group = parser.add_argument_group('Experiments parameters')
-    aa("--result_folder", type=str, default="results/vqvae-4.21_m64__2024_04_21__02_30_25/", help="Result folder")
+    aa("--result_folder", type=str, default="results/QRwatermark/", help="Result folder")
     aa("--model_epoch", type=int, default=241, help="Model epoch to load")
     aa("--strength_factor", type=float, default=1, help="Strength factor for encoding")
     aa("--dataset_path", type=str, default="datasets/", help="Path to the dataset")
