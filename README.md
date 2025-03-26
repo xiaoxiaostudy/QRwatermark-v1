@@ -28,16 +28,20 @@ DFP/
 └── ...
 ```
 
-#Train the model
+# Train the model
 Download VQVAE-f4 (https://ommer-lab.com/files/latent-diffusion/vq-f4.zip) and put it in ckpt/ ,and then run:
 ```sh
 python train.py --image_H 256 --image_W 256 --message_length 64 --batch_size 4
 ```
 
-#Evalation the model
+# Evalation the model
 For distoration attack, just run:
 ```sh
 python distoration.py --image_H 256 --image_W 256 --message_length 64 --batch_size 8
+```
+For regeneration attack,run:
+```sh
+python regeneration.py --image_H 256 --image_W 256 --message_length 64
 ```
 
 
